@@ -369,8 +369,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13, y: 67.5}
-  m_SizeDelta: {x: 388, y: 345}
+  m_AnchoredPosition: {x: -119, y: 75}
+  m_SizeDelta: {x: 380, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &357364608
 MonoBehaviour:
@@ -956,6 +956,7 @@ GameObject:
   - component: {fileID: 1335909175}
   - component: {fileID: 1335909174}
   - component: {fileID: 1335909173}
+  - component: {fileID: 1335909172}
   m_Layer: 5
   m_Name: book
   m_TagString: Untagged
@@ -982,6 +983,18 @@ RectTransform:
   m_AnchoredPosition: {x: -13, y: 67.5}
   m_SizeDelta: {x: 388, y: 345}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1335909172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335909170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192626568df24422a8a8db120a6e5664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1335909173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,17 +1039,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 357364606}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1335909172}
+        m_TargetAssemblyTypeName: disappear, Assembly-CSharp
+        m_MethodName: dis
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1335909174
 MonoBehaviour:
@@ -1796,7 +1809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 341, y: 52.5}
+  m_AnchoredPosition: {x: 212, y: 52.5}
   m_SizeDelta: {x: 240, y: 375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045510729
@@ -2005,8 +2018,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 341, y: 52.5}
-  m_SizeDelta: {x: 240, y: 375}
+  m_AnchoredPosition: {x: 341, y: 60.338196}
+  m_SizeDelta: {x: 227.4589, y: 359.3236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2138039473
 MonoBehaviour:

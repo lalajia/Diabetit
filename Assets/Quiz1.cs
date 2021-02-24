@@ -23,6 +23,8 @@ public class Quiz1 : MonoBehaviour {
 	public GameObject nextbutton;
 
 	public GameObject layer;
+	
+	public GameObject dialogbox;
 
 	//public GameObject hand;
 
@@ -41,6 +43,8 @@ public	void talking()
 				
 				BText2.text = "How long should you scrub your hands for?";
 				SText2.text = "Quiz Time";
+
+				dialogbox.SetActive(true);
 				
 			}
 
@@ -57,6 +61,8 @@ public	void talking()
 				SChoice.SetActive(true);
 				TChoice.SetActive(true);
 				layer.SetActive(true);
+
+				dialogbox.SetActive(true);
 				
 			}
 
@@ -65,13 +71,15 @@ public	void talking()
 
 		else	if(_int == 100)
 			{
-				BText1.text = "Your turn! Keep tapping on your hands to get rid of the germs!";
+				BText1.text = "<b>Your turn!</b> Keep tapping on your hands to get rid of the germs!";
 				SText1.text = "Dr.Diana";
 				
 				BText2.text = "";
 				SText2.text = "";
 
 				nextbutton.SetActive(false);
+
+				dialogbox.SetActive(false);
 			}
 
 			else	if(_int == 101)
@@ -108,11 +116,15 @@ public	void talking()
 		layer.SetActive(false);
 		nextbutton.SetActive(true);
 
+		dialogbox.SetActive(true);
+
 	}
 
 	public void T()
 	{
-		BText1.text = "You got it! Scrub your hands with soap and water for at least 30 seconds to thoroughly clean them.";
+
+
+		BText1.text = "You got it! Scrub your hands with soap and water for at least <b>30 seconds</b> to thoroughly clean them.";
 		SText1.text = "Quiz Time";
 		
 		BText2.text = "";
@@ -125,6 +137,8 @@ public	void talking()
 		SChoice.SetActive(false);
 		TChoice.SetActive(false);
 		layer.SetActive(false);
+
+		dialogbox.SetActive(true);
 	}
 
 }
