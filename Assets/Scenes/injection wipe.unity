@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 521496912}
   - component: {fileID: 521496911}
   - component: {fileID: 521496910}
+  - component: {fileID: 521496909}
   m_Layer: 5
   m_Name: frontarrow
   m_TagString: Untagged
@@ -570,6 +571,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &521496909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521496908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51c707d761fb4d55ab922cf3a67df50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: injection vial
 --- !u!114 &521496910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,7 +627,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 521496911}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 521496909}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: nextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &521496911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +950,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 151b8ce1046584fa086e46b484a67487, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
@@ -1211,7 +1237,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 151b8ce1046584fa086e46b484a67487, type: 3}
     m_FontSize: 38
     m_FontStyle: 0
     m_BestFit: 0
@@ -1441,7 +1467,6 @@ GameObject:
   - component: {fileID: 2068945744}
   - component: {fileID: 2068945743}
   - component: {fileID: 2068945742}
-  - component: {fileID: 2068945741}
   m_Layer: 5
   m_Name: front
   m_TagString: Untagged
@@ -1468,19 +1493,6 @@ RectTransform:
   m_AnchoredPosition: {x: 362.5, y: -274}
   m_SizeDelta: {x: 121, y: 88}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2068945741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068945739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a51c707d761fb4d55ab922cf3a67df50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: injection wash
 --- !u!114 &2068945742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1524,19 +1536,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2068945743}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2068945741}
-        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: nextScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2068945743
 MonoBehaviour:
   m_ObjectHideFlags: 0
