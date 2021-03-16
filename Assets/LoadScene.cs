@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
+/*load to next scene with sceneName */
 public class LoadScene : MonoBehaviour
 {
     public string sceneName;

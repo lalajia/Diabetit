@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
+/*used on injection wash; */
 public class Quiz1 : MonoBehaviour {
 
 	public Text BText1; //DText
@@ -98,7 +99,7 @@ public	void talking()
 
 
 
-	/// CHOICE TIME ///
+	//First choice and second choice are wrong
 
 	public void FS()
 	{
@@ -119,6 +120,8 @@ public	void talking()
 		dialogbox.SetActive(true);
 
 	}
+
+	//third choice are correct
 
 	public void T()
 	{

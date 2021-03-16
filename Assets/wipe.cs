@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/*used on injection wipe; */
 public class wipe : MonoBehaviour
 {
     public Image wipeup;

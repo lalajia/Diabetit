@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.Sprites;
 using System.Collections;
 
+/*used on injection wash 2 */
 public class hand : MonoBehaviour
 {
     public Image hand1;

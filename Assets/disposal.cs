@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.Sprites;
 using System.Collections;
 
+/*used on injection dis */
 public class disposal : MonoBehaviour
 {
     public Image congrats;
@@ -46,7 +47,7 @@ public class disposal : MonoBehaviour
 
         }
     }
-
+    //second choice function
     public void SC(){
         Dtext.text = "<b>Correct!</b> Syringes have <b>needles</b>, which must be disposed of in a sharps disposal container. This is to reduce needle sticks and cuts from loose needles!";
         Dname.text = "Quiz Time";
@@ -60,7 +61,7 @@ public class disposal : MonoBehaviour
         biocan1.SetActive(true);    
 
     }
-
+    //first choice function
     public void FC(){
         Dtext.text = "<b>Incorrect!</b> Needles must be disposed separately from household trash. <b>Try again!</b>";
         Dname.text = "Quiz Time";

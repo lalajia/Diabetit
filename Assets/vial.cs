@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.Sprites;
 using System.Collections;
 
+/*used on injection vial 2; */
 public class vial : MonoBehaviour
 {
     public Image handv;
@@ -37,13 +38,7 @@ public class vial : MonoBehaviour
             Dtext.text = "Drag the plunger up to fill the syringe with insulin.";
             Dname.text = "Dr. Diana";
         }
-        /*else if(_count == 4){
-            next.SetActive(false);
-            rarrow.SetActive(true);
-
-            Dtext.text = "Nice! Now that we’ve filled the syringe with insulin, we are ready to inject.";
-            Dname.text = "Dr. Diana";
-        }*/
+        
         else if(_count == 4){
             loadnext.SetActive(true);
             rarrow.SetActive(false);
